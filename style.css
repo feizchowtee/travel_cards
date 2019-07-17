@@ -1,0 +1,231 @@
+/*----------------
+Libre Franklin Font
+-------------------*/
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/*----------------
+Universal Styles
+-------------------*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Libre Franklin';
+  text-rendering: optimizeLegibility;
+  font-weight: 100;
+  color: #242424;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 100;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    text-align: left;
+  }
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #be3144;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 550px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#wrapper {
+  min-height: 100vh;
+  padding: 50px 10%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrapper .title {
+  margin-bottom: 80px;
+}
+
+#wrapper .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #wrapper .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapper .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+#wrapper .cards .card {
+  width: 100%;
+  background: #f5f5f5;
+  -webkit-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapper .cards .card {
+    max-width: 375px;
+  }
+}
+
+#wrapper .cards .card .card-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#wrapper .cards .card .card-img img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+#wrapper .cards .card .card-content {
+  padding: 0 19px;
+}
+
+#wrapper .cards .card .card-content .card-title {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapper .cards .card .card-content .card-title {
+    margin-bottom: 16px;
+  }
+}
+
+#wrapper .cards .card .card-content .card-title h2 {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapper .cards .card .card-content .card-title h2 {
+    font-size: 24px;
+  }
+}
+
+#wrapper .cards .card .card-content .card-title small {
+  font-weight: 700;
+  font-size: 14px;
+  color: #be3144;
+}
+
+#wrapper .cards .card .card-content p {
+  margin-bottom: 30px;
+  min-height: 96px;
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapper .cards .card .card-content p {
+    margin-bottom: 16px;
+  }
+}
+
+#wrapper .cards .card .card-content .card-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapper .cards .card .card-content .card-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+#wrapper .cards .card .card-content .card-links li {
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapper .cards .card .card-content .card-links li {
+    margin: 10px 0;
+  }
+}
+
+#wrapper .cards .card .card-content .card-links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+#wrapper .cards .card .card-content .card-links li a span {
+  color: #242424;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed #be3144;
+}
